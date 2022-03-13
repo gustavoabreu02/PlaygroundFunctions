@@ -9,8 +9,9 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(frase) {
-  
+function splitSentence() {
+  // seu código aqui
+}
 
 // Desafio 4
 function concatName(array) {
@@ -19,7 +20,6 @@ function concatName(array) {
   return numb2 + ', ' + numb1
 
 }
-
 
 // Desafio 5
 function footballPoints() {
