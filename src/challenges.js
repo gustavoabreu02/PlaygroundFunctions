@@ -49,8 +49,8 @@ let resultado = 0;
 function catAndMouse(mouse, cat1, cat2) {
   let distan1 = cat1 - mouse;
   let distan2 = cat2 - mouse;
-  Math.abs(cat1)
-  Math.abs(cat2)
+  Math.abs(distan1)
+  Math.abs(distan2)
   if (distan1 < distan2) {
     return 'cat1'
   } else if (distan2 < distan1) {
