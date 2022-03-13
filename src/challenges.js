@@ -52,9 +52,9 @@ function catAndMouse(mouse, cat1, cat2) {
   Math.abs(distan1)
   Math.abs(distan2)
   if (distan1 < distan2) {
-    return 'cat1'
+    return "cat1"
   } else if (distan2 < distan1) {
-    return 'cat2'
+    return "cat2"
   } else if (distan1 == distan2) {
     return "os gatos trombam e o rato foge"
   }
