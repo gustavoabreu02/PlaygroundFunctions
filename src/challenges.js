@@ -47,16 +47,17 @@ let resultado = 0;
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
+  mouse += 1;
+  cat1 += 1;
+  cat2 += 1;
   let distan1 = cat1 - mouse;
   let distan2 = cat2 - mouse;
-  Math.abs(distan1)
-  Math.abs(distan2)
-  if (distan1 < distan2) {
-    return "cat1"
-  } else if (distan2 < distan1) {
-    return "cat2"
-  } else if (distan1 == distan2) {
-    return "os gatos trombam e o rato foge"
+  if (Math.abs(distan1) < Math.abs(distan2)) {
+    return 'cat1';
+  } else if (Math.abs(distan2) < Math.abs(distan1)) {
+    return 'cat2';
+  } else if (Math.abs(distan1) == Math.abs(distan2)) {
+    return 'os gatos trombam e o rato foge';
   }
 }
 
