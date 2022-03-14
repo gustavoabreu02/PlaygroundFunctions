@@ -126,6 +126,7 @@ function decode(palavra) {
 function techList(array, name) {
   let resultado = {};
   let resultado2 = [];
+  array.sort();
   for (let i of array) {
     resultado['tech'] = i;
     resultado['name'] = name;
