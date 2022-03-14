@@ -133,7 +133,9 @@ function techList(array, name) {
     resultado2.push(resultado)
     resultado = {};
    }
-   
+   if (array[0] == undefined ) {
+    resultado2 = 'Vazio!'
+  }
    return resultado2
 }
 
