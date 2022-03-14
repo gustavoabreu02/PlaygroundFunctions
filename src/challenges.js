@@ -15,8 +15,9 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(palavra) {
+  let novaPalavra = palavra.split(' ');
+  return novaPalavra
 }
 
 // Desafio 4
@@ -122,8 +123,17 @@ function decode(palavra) {
   }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, name) {
+  let resultado = {};
+  let resultado2 = [];
+  for (let i of array) {
+    resultado['tech'] = i;
+    resultado['name'] = name;
+    resultado2.push(resultado)
+    resultado = {};
+   }
+   
+   return resultado2
 }
 
 module.exports = {
