@@ -78,8 +78,23 @@ for (let i = 0; i < array.length; i += 1 ) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(palavra) {
+let palavra2 = '';
+for (let index of palavra) {
+  if (index == 'a') {
+    index = 1;
+  } else if (index == 'e') {
+    index = 2;
+  } else if (index == 'i') {
+    index = 3;
+  } else if (index == 'o') {
+    index = 4;
+  } else if (index == 'u') {
+    index = 5;
+  }
+   palavra2 += index
+} 
+  return palavra2
 }
 function decode() {
   // seu código aqui
