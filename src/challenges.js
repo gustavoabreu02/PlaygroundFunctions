@@ -96,9 +96,24 @@ for (let index of palavra) {
 } 
   return palavra2
 }
-function decode() {
-  // seu código aqui
-}
+function decode(palavra) {
+  let palavra2 = '';
+  for (let index of palavra) {
+    if (index == '1') {
+      index = 'a';
+    } else if (index == '2') {
+      index = 'e';
+    } else if (index == '3') {
+      index = 'i';
+    } else if (index == '4') {
+      index = 'o';
+    } else if (index == '5') {
+      index = 'u';
+    }
+     palavra2 += index
+  } 
+    return palavra2
+  }
 
 // Desafio 10
 function techList() {
