@@ -2,6 +2,9 @@
 function generatePhoneNumber(numero) {
   let resultado = '';
   let repete = 0;
+  if (numero.length > 11 || numero.length < 11) {
+    return "Array com tamanho incorreto."
+  }
 for (let i of numero) {
   if (repete == 2 || repete == 1) {
     repete = 0
@@ -14,10 +17,7 @@ for (let i of numero) {
       repete += 1;
     }
   }
-}
-  if (numero.length > 11) {
-    return "Array com tamanho incorreto."
-  }
+} 
 for (let i in numero) {
   if (numero[i] < 0 || numero[i] > 9) {
     return "não é possível gerar um número de telefone com esses valores"
