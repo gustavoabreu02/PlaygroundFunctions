@@ -49,8 +49,18 @@ return resultado
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+let a = Math.abs(lineA)
+let b = Math.abs(lineB)
+let c = Math.abs(lineC)
+
+if (lineA + lineB > lineC && lineC + lineB > lineA && lineA + lineC > lineB && a - b - c < a && a - b - c < b && a - b - c < c ) {
+    return true
+} else {
+    return false
+}
+
+  
 }
 
 // Desafio 13
