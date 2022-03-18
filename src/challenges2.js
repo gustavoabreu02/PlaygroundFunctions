@@ -64,8 +64,21 @@ if (lineA + lineB > lineC && lineC + lineB > lineA && lineA + lineC > lineB && a
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+let numbers = string.match(/\d+/g).map(Number);
+// https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript
+// a função que usei na minha variável numbers aprendi no site acima.
+let aguas = 0;
+resultado = ''
+for (let i = 0; i < numbers.length; i += 1) {
+    aguas += numbers[i]
+} 
+ if (aguas == 1) {
+     resultado = aguas.toString() + ' copo de água'
+
+ } else if (aguas > 1) {
+     resultado = aguas.toString() + ' copos de água'
+ }  return resultado
 }
 
 module.exports = {
